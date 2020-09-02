@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'b2n+y4@l@u1adz#r+pyyh@@$=i_q=b708l*9q!iu8c@w$ikb0+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['movierecommendation0.herokuapp.com','127.0.0.1']
 
 
 # Application definition
