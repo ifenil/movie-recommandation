@@ -26,7 +26,7 @@ SECRET_KEY = 'b2n+y4@l@u1adz#r+pyyh@@$=i_q=b708l*9q!iu8c@w$ikb0+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['movierecommendation0.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['movieengine.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,3 +126,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
     ]
 STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+
+
